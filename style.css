@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-szie:16px;
+}
+
+img,
+iframe{
+	max-width: 100%;
+	height: auto;
+	/*so that aspect ratio is kept evem of height is declared in markup */
+	border: 0;
+	/* this stops a border i the image is inside a link */
+}
+
+/* always comment your work to explain what ur doing*/
+body {
+	font-family: 'Press Start 2P', cursive;
+}
+
+/*
+background colour defaults
+note that html and css use amerian selling */
+
+body {
+	
+}
+header {
+	background-color: white;
+}
+/*Note that if we want a number of elements to have the same style, we just comma separate them */
+header, footer {
+	text-align: center;
+}
+
+/*typography*/
+h1 {
+	font-size: 30px;
+	color: black; /*white*/
+	text-transform: uppercase;
+
+}
+h2 {
+	font-size: 20px;
+	font-family: 'Press Start 2P', cursive;
+	text-transform: uppercase;
+}
+h1, h2, p, li {
+	padding-bottom: 1em;
+}
+
+.item {
+	background-color: white;
+	padding:1%;
+	margin:1%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-radius: 10px
+}
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+	/*theres rarely any time you should st an explicit width. always use max-width wherever possible */
+	max-width: 1000px;
+	/*change the above to width: 1000px and see what happens with responsive */
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+/*lets talk about nesting*/
+.item li {
+	margin-left: 25px;
+}
+blockquote {
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+nav {
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+}
+/*nav li a, or nav a*/ 
+nav a {
+	background: white;
+	color: black;
+	padding: 5px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+nav a:hover {
+	background: orange;
+}
+body {
+	background-color: black;
+	background-image: url("contact.jpg");
+	background-repeat: repeat;
+	background-size: 1000px;
+}
+
+/*media query - responsivw*/
+@media screen and (min-width: 500px ) {
+	body {
+background-color: #7903B6;
+font-family: 'Press Start 2P', cursive;
+	}
+	.item {
+		background-color: white;
+	}
+	h2 {
+		font-family: 'Press Start 2P';
+	}
+}
+
+@media screen and (min-width: 768px){
+	body {
+		background-color: black;
+		background-image: url("contact.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.item {
+		
+			background-color: white; 
+		}
+	footer {
+		color: white;
+		clear: both.0
+	}
+}
+
+
